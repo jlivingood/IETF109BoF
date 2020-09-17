@@ -7,7 +7,9 @@ The purpose of a BOF is to conduct a single, brief discussion or to ascertain in
 ==== NAME ====
 
 - Name: Exact MPLS Edges (EXAMPLE) (There's an acronym for anything if you really want one ;-)
-- Description: Text. A few paragraphs.
+
+- Description: Major operating systems have implemented and deployed MAC Address randomization to improve device and user privacy. It is common practice on many types of networks today to use the  MAC Address as a form of device identification. Some examples are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and MAC address ACL for blocking malicious or unwanted devices. We are interested in determining if there is sufficient support in the IETF community to define best practices and potentially a new protocol for service continuity in the presence of MAC Address randomization.
+
 - Status: (not) WG Forming
 - Responsible AD: TBD
 - BoF proponents: Jason Weil <Jason.Weil@charter.com>, Yiu Lee <Yiu_Lee@comcast.com>, Jason Livingood (Jason_Livingood@comcast.com>

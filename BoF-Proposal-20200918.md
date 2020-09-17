@@ -6,7 +6,7 @@ The purpose of a BOF is to conduct a single, brief discussion or to ascertain in
 
 ==== NAME ====
 
-- Name: Exact MPLS Edges (EXAMPLE) (There's an acronym for anything if you really want one ;-)
+- Name: MAC Address Device Identification for Network and Application Services (MADINAS)
 
 - Description: Major operating systems have implemented and deployed MAC Address randomization to improve device and user privacy. It is common practice on many types of networks today to use the  MAC Address as a form of device identification. Some examples are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and MAC address ACL for blocking malicious or unwanted devices. We are interested in determining if there is sufficient support in the IETF community to define best practices and potentially a new protocol for service continuity in the presence of MAC Address randomization.
 
@@ -20,10 +20,10 @@ The purpose of a BOF is to conduct a single, brief discussion or to ascertain in
 
 - Agenda
    - Items, drafts, speakers, timing
-   - Or a URL
+   - https://github.com/jlivingood/IETF109BoF/109-Agenda.md
 - Links to the mailing list, draft charter if any, relevant Internet-Drafts, etc.
    - Mailing List: https://www.ietf.org/mailman/listinfo/example
-   - Draft charter: https://datatracker.ietf.org/doc/charter-ietf-EXAMPLE/
+   - Draft charter: https://github.com/jlivingood/IETF109BoF/Draft-Charter.md
    - Relevant drafts:
       - Use Cases:
          - http://tools.ietf.org/html/draft-blah-uses

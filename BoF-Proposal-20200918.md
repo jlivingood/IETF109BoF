@@ -21,7 +21,7 @@ Major operating systems have implemented and deployed MAC Address randomization 
 
 ### - Agenda
    - Copy in agenda from URL below
-   - https://github.com/jlivingood/IETF109BoF/109-Agenda.md
+   - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md
 ### - Links to the mailing list, draft charter if any, relevant Internet-Drafts, etc.
    - Mailing List: TBD
    - Draft charter: N/A

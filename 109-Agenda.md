@@ -1,13 +1,16 @@
 # DRAFT Agenda for IETF-109 BoF - MADINAS
+MAC Address Device Identification for Network and Application Services
+1.5 - 2 Hours
 
-# Welcome & Agenda Review
+## Welcome & Agenda Review
 
-# Background - Problem Statement & Use Cases
+## Background - Problem Statement & Use Cases -- 10 Mins
+- One presentation, 2-4 slides, link TBD
 
-## Problem Definition
-- Overview of OS deployment of MAC Address randomization
+### Problem Definition -- 10 Mins
+- Overview of OS deployment of MAC Address randomization, 2 slides, link TBD
 
-## Use Cases
+### Use Cases -- 60 Mins
 - LAN gateway NAPT forwarding
 - Static NAPR policies 
 - Persistent DHCP IP address assignments
@@ -15,7 +18,7 @@
 - Device-to-user or group association for parental controls
 - Device-to-user or group association to restrict or authorize unwanted or unverified device connections to the LAN
 
-# Interest & Next Steps
+## Discussion, Interest & Next Steps -- 30 Mins
 - Identify community of interest
 - Define best practices for enabling service continuity in the presence of MAC Address randomization
 - Potentially define a method for service continuity in the presence of MAC Address randomization

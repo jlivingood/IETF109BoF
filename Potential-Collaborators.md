@@ -5,6 +5,7 @@ We are working to gather a list of potential collaborators or others that may ha
 - Cujo
 - Cisco
 - LiberyMutul (Virgin Media)
+- Plume
 - WiFi equipment vendors
 - ISPs and WISPs
 - WiFi network operators
@@ -12,3 +13,5 @@ We are working to gather a list of potential collaborators or others that may ha
 ## People
 - Kyle Johnson <Kyle.Johnson@charter.com>
 - Stephan Kelly <Stephen.Kelly@virginmedia.co.uk>
+- Bill McFarland <bill@plume.com> 
+- Paul White <paul@plume.com> 

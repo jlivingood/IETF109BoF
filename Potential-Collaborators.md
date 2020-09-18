@@ -3,7 +3,6 @@
 ##Companies
 - Cujo
 - Cisco
-- Akamai (related to Comcast Business Security Edge) ??
 - LiberyMutul (Virgin Media)
 
 ##People

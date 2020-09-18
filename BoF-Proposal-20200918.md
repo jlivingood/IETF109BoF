@@ -27,9 +27,8 @@ TBD
 TBD
 
 ### - Agenda
-   - Copy in agenda from URL below
    - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md
 ### - Links to the mailing list, draft charter if any, relevant Internet-Drafts, etc.
-   - Mailing List: TBD
+   - Mailing List: TBD or N/A
    - Draft charter: N/A
    - Relevant drafts: TBD

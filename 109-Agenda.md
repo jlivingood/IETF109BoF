@@ -13,7 +13,7 @@ MAC Address Device Identification for Network and Application Services
 
 ### Use Cases -- 60 Mins
 - LAN gateway NAPT forwarding
-- Static NAPR policies 
+- Static NAPT policies 
 - Persistent DHCP IP address assignments
 - Device-to-user or group association for malware protection
 - Device-to-user or group association for parental controls

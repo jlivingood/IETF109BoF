@@ -105,7 +105,7 @@ Table of Contents
    can be used to determine to which device on a LAN to permit or deny
    access at a particular time of day (e.g. child's tablet may not
    access Internet after 22:00 hrs until 06:00 hrs).  Such services
-   often rely on a database or other method to map MAC addreses to a
+   often rely on a database or other method to map MAC addresses to a
 
 
 

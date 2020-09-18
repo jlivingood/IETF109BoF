@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This template is for creating an Internet Draft using xml2rfc,
+    which is available here: http://xml.resource.org. -->
+<!DOCTYPE rfc SYSTEM "rfc2629-xhtml.ent">
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- used by XSLT processors -->
+<!-- For a complete list and description of processing instructions (PIs),
+    please see http://xml.resource.org/authoring/README.html. -->
+<rfc
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      category="info"
+      docName="draft-lee-randomized-macaddr-ps-01"
+      ipr="trust200902"
+      obsoletes=""
+      updates=""
+      submissionType="IETF"
+      xml:lang="en"
+      tocInclude="true"
+      tocDepth="4"
+      symRefs="true"
+      sortRefs="true"
+      version="3">
+  <!-- xml2rfc v2v3 conversion 2.38.1 -->
+  <!-- category values: std, bcp, info, exp, and historic
+    ipr values: trust200902, noModificationTrust200902, noDerivativesTrust200902,
+       or pre5378Trust200902
+    you can add the attributes updates="NNNN" and obsoletes="NNNN"
+    they will automatically be output with "(if approved)" -->
+
+ <!-- ***** FRONT MATTER ***** -->
+
+ <front>
+    <!-- The abbreviated title is used in the page header - it is only necessary if the
+        full title is longer than 39 characters -->
+
+   <title abbrev="Abbreviated Title">Problem Statements for MAC Address Randomization</title>
+    <seriesInfo name="Internet-Draft" value="draft-lee-randomized-macaddr-ps-01"/>
+    <!-- add 'role="editor"' below for the editors if appropriate -->
+
+   <!-- Another author who claims to be an editor -->
+
+   <author fullname="Yiu L. Lee" initials="Y." surname="Lee">
+      <organization>Comcast</organization>
+      <address>
+        <postal>
+          <street>1800 Arch Street</street>
+         <city>Philadelphia</city>
+          <region>PA</region>
+          <code>19103</code>
+          <country>USA</country>
+        </postal>
+        <phone>+1 215 286 5894</phone>
+        <email>yiu_lee@comcast.com</email>
+        <!-- uri and facsimile elements may also be added -->
+     </address>
+    </author>
+
+    <author fullname="Jason Livingood" initials="J" surname="Livingood">
+       <organization>Comcast</organization>
+       <address>
+         <postal>
+           <street>1800 Arch Street</street>
+          <city>Philadelphia</city>
+           <region>PA</region>
+           <code>19103</code>
+           <country>USA</country>
+         </postal>
+         <phone>+1 215 286 5894</phone>
+         <email>yiu_lee@comcast.com</email>
+         <!-- uri and facsimile elements may also be added -->
+      </address>
+     </author>
+
+    <author fullname="Jason Weil" initials="J" surname="Weil">
+       <organization>Charter Communications</organization>
+       <address>
+         <postal>
+           <street/>
+           <!-- Reorder these if your country does things differently -->
+
+          <city>Orlando</city>
+           <region>FL</region>
+           <code/>
+           <country>USA</country>
+         </postal>
+         <email>Jason.Weil@charter.com</email>
+         <!-- uri and facsimile elements may also be added -->
+      </address>
+     </author>
+
+    <date year="2020"/>
+    <!-- If the month and year are both specified and are the current ones, xml2rfc will fill
+        in the current day for you. If only the current year is specified, xml2rfc will fill
+	 in the current day and month for you. If the year is not the current one, it is
+	 necessary to specify at least a month (xml2rfc assumes day="1" if not specified for the
+	 purpose of calculating the expiry date).  With drafts it is normally sufficient to
+	 specify just the year. -->
+
+   <!-- Meta-data Declarations -->
+
+   <area>General</area>
+    <workgroup>Internet Engineering Task Force</workgroup>
+    <!-- WG name at the upperleft corner of the doc,
+        IETF is fine for individual submissions.
+	 If this element is not present, the default is "Network Working Group",
+        which is used by the RFC Editor as a nod to the history of the IETF. -->
+
+   <keyword>template</keyword>
+    <!-- Keywords will be incorporated into HTML output
+        files in a meta tag but they have no effect on text or nroff
+        output. If you submit your draft to the RFC Editor, the
+        keywords will be used for the search engine. -->
+
+   <abstract>
+      <t>Insert an abstract: MANDATORY. This template is for creating an
+     Internet Draft.</t>
+    </abstract>
+  </front>
+  <middle>
+    <section numbered="true" toc="default">
+      <name>Introduction</name>
+      <t>Ethernet protocol
+        is the implementation of data link layer defined in the Open Systems Interconnection model (OSI).
+        Ethernet protocol is defined in IEEE 802.1 standard and MAC address is the address used in Ethernet protocol.
+        MAC address is 48-bit long
+        and usually defined in the hardware. Each Ethernet interface comes
+        with a MAC address assigned by the manufacturer. Each device has one or more
+        MAC addresses. For example, a given IoT device may only have a single WiiFi
+        network interface and therefore a single MAC address. In contract, a
+        laptop may have three interfaces that encompasses two wired Ethernet ports
+        and a WiFi interface, and therefore will have three MAC addresses.
+        MAC address is used at
+        the Local-Area-Network (LAN) for frame forwarding. It is locally
+        significant in the LAN and critical LAN-to-LAN
+        communications.</t>
+
+        <t>The device manufacturer typically assigns the MAC address to an interface.
+        Unless the user or operating system modifies the MAC address, which is
+        sometimes the case, the MAC address follows a defined format and uses 2 parts.
+        Those are Manufacturer ID and Interface ID. In a typical MAC address,
+        the first 3 bytes correspond to the organization that created the device,
+        called the Organizationally Unique Identifier (OUI). This OUI portion
+        uniquely identifies a manufacturer, vendor, or other organization, and
+        is assigned by the IEEE from their IEEE Registration Authority.
+        The second 3 bytes of the MAC address, the Network Interface Controller
+        (NIC) portion, is an identifier assigned by the manufacturer (or whatever
+        organization was assigned the OUI). Because of how MAC addresses are
+        constructed, a MAC address may contain information from which an
+        actor/service on a local network can infer the type and/or manufacturer
+        of the device, which is useful for a variety of operational and
+        troubleshooting reasons. For example, a MAC address can be used to
+        determine to which device on a LAN to permit or deny access at a
+        particular time of day (e.g. child's tablet may not access Internet
+        after 22:00 hrs until 06:00 hrs). Such services often rely on a database
+        or other method to map MAC addreses to a likely device make and model,
+        such as using a commercial service from Fingerbank,
+        https://fingerbank.org/about/, after which the user would then label
+        the device (e.g. Jane’s iPhone).</t>
+
+        <t>Many networks today
+        use MAC address to uniquely identify a device. For example: Sticky DHCP
+        assignment often maps to MAC address. In additional, many local network
+        policies such as port-forwarding, DMZ setup and LAN QoS are all based on
+        MAC address. There are also business policies that are making
+        assumptions on MAC address. For example: Hospitality Internet service
+        used in hotels, airplanes, and Community WiFi often uses MAC address to
+        tie to Internet subscription.</t>
+
+        <t>Major operating systems have implemented and deployed MAC address randomization
+        to improve device and user privacy. It is common practice on many types of networks
+        today to use the  MAC address as a form of device identification. Some examples
+        are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and
+        MAC address ACL for blocking malicious or unwanted devices. We are interested
+        in determining if there is sufficient support in the IETF community to define
+        best practices and potentially a new protocol for service continuity in the
+        presence of MAC address randomization.</t>
+
+      <section numbered="true" toc="default">
+        <name>Requirements Language</name>
+        <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+       "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+       document are to be interpreted as described in <xref target="RFC2119"
+       format="default">RFC 2119</xref>.</t>
+      </section>
+    </section>
+
+
+    <!-- This PI places the pagebreak correctly (before the section title) in the text output. -->
+
+    <section numbered="true" toc="default">
+      <name>Problem Statement</name>
+
+        <t>Recently, more and more privacy concerns are related to the
+        static MAC address. In particular, security community worries about
+        people being able to tie the MAC address to a particular device. This
+        may enable device tracking and tracing. To address the privacy concern,
+        MAC address randomization is developed. MAC address randomization is a
+        technique similar to IPv6 temporary IIDs defined in <xref target="RFC7217"
+        format="default">RFC 7217</xref>. Devices will auto-generate the MAC
+        address based on the device policy and use the random generated MAC address
+        instead of the hardware based MAC address assigned by the manufacturer when
+        they connect to the network. Many modern Operation Systems
+        such as Apple iOS (https://support.apple.com/en-us/HT211227),
+        Google Android (https://source.android.com/devices/tech/connect/wifi-mac-randomization)
+        and Microsoft Windows 10 (https://support.microsoft.com/en-us/help/4027925/windows-how-and-why-to-use-random-hardware-addresses)
+        are experimenting MAC addresses randomization. The randomization policy could be time based, network
+        based, combination of both and more. MAC address randomization is a
+        important step forward to protect user privacy. However, it will
+        break some applications that make assumptions of the MAC address.</t>
+
+        <t> In some circumstances, users may want to give the trusted network
+          (e.g., home network) some predictability of the MAC address for some
+          important services. For example, whitelisting MAC address for network
+          access. This document defines a set of problem statements to continue
+          the existing LAN services when MAC address is randomized.</t>
+
+        <t>[PS-01] Internet Service Provider (ISP) must not make any assumption
+          about the MAC address</t>
+        <t>[PS-02] ISP must not make any assumption of the Randomization
+            Policy</t>
+        <t>[PS-03] LAN policy must not tie to a fixed MAC address</t>
+        <t>[PS-04] A mechanism must be defined to securely identify a device.
+          The mechanism can leverage existing protocols (e.g., EAP) or newly
+          defined protocol.</t>
+        <t>[PS-05] ISP and device may leverage existing protocol or define a new
+          mechanism to exchange information about MAC address randomization</t>
+
+    </section>
+
+   <section anchor="IANA" numbered="true" toc="default">
+      <name>IANA Considerations</name>
+      <t>This memo includes no request to IANA.</t>
+      <t>All drafts are required to have an IANA considerations section (see
+     <xref target="RFC5226" format="default">Guidelines for Writing an IANA Considerations Section in RFCs</xref> for a guide). If the draft does not require IANA to do
+     anything, the section contains an explicit statement that this is the
+     case (as above). If there are no requirements for IANA, the section will
+     be removed during conversion into an RFC by the RFC Editor.</t>
+    </section>
+    <section anchor="Security" numbered="true" toc="default">
+      <name>Security Considerations</name>
+      <t>All drafts are required to have a security considerations section.
+     See <xref target="RFC3552" format="default">RFC 3552</xref> for a guide.</t>
+    </section>
+  </middle>
+  <!--  *****BACK MATTER ***** -->
+
+ <back>
+    <!-- References split into informative and normative -->
+
+   <!-- There are 2 ways to insert reference entries from the citation libraries:
+    1. define an ENTITY at the top, and use "ampersand character"RFC2629; here (as shown)
+    2. simply use a PI "less than character"?rfc include="reference.RFC.2119.xml"?> here
+       (for I-Ds: include="reference.I-D.narten-iana-considerations-rfc2434bis.xml")
+
+    Both are cited textually in the same manner: by using xref elements.
+    If you use the PI option, xml2rfc will, by default, try to find included files in the same
+    directory as the including file. You can also define the XML_LIBRARY environment variable
+    with a value containing a set of directories to search.  These can be either in the local
+    filing system or remote ones accessed by http (http://domain/dir/... ).-->
+
+    <references title="Normative References">
+      <?rfc include="reference.RFC.2119.xml" ?>
+      <?rfc include="reference.RFC.3552.xml" ?>
+      <?rfc include="reference.RFC.5226.xml" ?>
+   </references>
+
+   <references title="Informative References">
+     <?rfc include="reference.RFC.7217.xml" ?>
+   </references>
+
+    <section anchor="app-additional" numbered="true" toc="default">
+      <name>Additional Stuff</name>
+      <t>This becomes an Appendix.</t>
+    </section>
+    <!-- Change Log
+
+v00 2006-03-15  EBD   Initial version
+
+v01 2006-04-03  EBD   Moved PI location back to position 1 -
+                     v3.1 of XMLmind is better with them at this location.
+v02 2007-03-07  AH    removed extraneous nested_list attribute,
+                     other minor corrections
+v03 2007-03-09  EBD   Added comments on null IANA sections and fixed heading capitalization.
+                     Modified comments around figure to reflect non-implementation of
+                     figure indent control.  Put in reference using anchor="DOMINATION".
+                     Fixed up the date specification comments to reflect current truth.
+v04 2007-03-09 AH     Major changes: shortened discussion of PIs,
+                     added discussion of rfc include.
+v05 2007-03-10 EBD    Added preamble to C program example to tell about ABNF and alternative
+                     images. Removed meta-characters from comments (causes problems).
+
+v06 2010-04-01 TT     Changed ipr attribute values to latest ones. Changed date to
+                     year only, to be consistent with the comments. Updated the
+                     IANA guidelines reference from the I-D to the finished RFC.
+v07 2020-01-21 HL    Converted the template to use XML schema version 3.
+    -->
+ </back>
+</rfc>

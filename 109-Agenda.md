@@ -21,5 +21,6 @@ MAC Address Device Identification for Network and Application Services
 
 ## Discussion, Interest & Next Steps -- 30 Mins
 - Identify community of interest
+- Document all major use cases currently deployed
 - Define best practices for enabling service continuity in the presence of MAC Address randomization
 - Potentially define a method for service continuity in the presence of MAC Address randomization

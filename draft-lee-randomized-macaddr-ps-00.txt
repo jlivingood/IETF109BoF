@@ -15,8 +15,13 @@ Expires: 22 March 2021                                           J. Weil
 
 Abstract
 
-   Insert an abstract: MANDATORY.  This template is for creating an
-   Internet Draft.
+   MAC address is the Link Layer address used in the Ethrenet protocol.
+   It is usually assigned by the Network Interface Card manufacturer and
+   being used for forwording and receiving frame.  Due to the static
+   nature of the MAC address, it raises some privacy concerns and MAC
+   address randomization is being implemented.  This draft documents the
+   impacts of MAC address randomization to existing use cases and
+   proposes few next steps IETF may consider to work on.
 
 Status of This Memo
 
@@ -45,11 +50,6 @@ Copyright Notice
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
    and restrictions with respect to this document.  Code Components
-   extracted from this document must include Simplified BSD License text
-   as described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Simplified BSD License.
-
-
 
 
 
@@ -57,6 +57,10 @@ Lee, et al.               Expires 22 March 2021                 [Page 1]
 
 Internet-Draft              Abbreviated Title             September 2020
 
+
+   extracted from this document must include Simplified BSD License text
+   as described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Simplified BSD License.
 
 Table of Contents
 
@@ -102,10 +106,6 @@ Table of Contents
    which an actor/service on a local network can infer the type and/or
    manufacturer of the device, which is useful for a variety of
    operational and troubleshooting reasons.  For example, a MAC address
-   can be used to determine to which device on a LAN to permit or deny
-   access at a particular time of day (e.g. child's tablet may not
-   access Internet after 22:00 hrs until 06:00 hrs).  Such services
-   often rely on a database or other method to map MAC addreses to a
 
 
 
@@ -114,6 +114,10 @@ Lee, et al.               Expires 22 March 2021                 [Page 2]
 Internet-Draft              Abbreviated Title             September 2020
 
 
+   can be used to determine to which device on a LAN to permit or deny
+   access at a particular time of day (e.g. child's tablet may not
+   access Internet after 22:00 hrs until 06:00 hrs).  Such services
+   often rely on a database or other method to map MAC addreses to a
    likely device make and model, such as using a commercial service from
    Fingerbank, https://fingerbank.org/about/, after which the user would
    then label the device (e.g.  Jane's iPhone).
@@ -158,10 +162,6 @@ Internet-Draft              Abbreviated Title             September 2020
    iOS (https://support.apple.com/en-us/HT211227), Google Android
    (https://source.android.com/devices/tech/connect/wifi-mac-
    randomization) and Microsoft Windows 10
-   (https://support.microsoft.com/en-us/help/4027925/windows-how-and-
-   why-to-use-random-hardware-addresses) are experimenting MAC addresses
-   randomization.  The randomization policy could be time based, network
-   based, combination of both and more.  MAC address randomization is a
 
 
 
@@ -170,6 +170,10 @@ Lee, et al.               Expires 22 March 2021                 [Page 3]
 Internet-Draft              Abbreviated Title             September 2020
 
 
+   (https://support.microsoft.com/en-us/help/4027925/windows-how-and-
+   why-to-use-random-hardware-addresses) are experimenting MAC addresses
+   randomization.  The randomization policy could be time based, network
+   based, combination of both and more.  MAC address randomization is a
    important step forward to protect user privacy.  However, it will
    break some applications that make assumptions of the MAC address.
 
@@ -211,10 +215,6 @@ Internet-Draft              Abbreviated Title             September 2020
 
 5.  Normative References
 
-   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
-              Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997,
-              <https://www.rfc-editor.org/info/rfc2119>.
 
 
 
@@ -225,6 +225,11 @@ Lee, et al.               Expires 22 March 2021                 [Page 4]
 
 Internet-Draft              Abbreviated Title             September 2020
 
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
 
    [RFC3552]  Rescorla, E. and B. Korver, "Guidelines for Writing RFC
               Text on Security Considerations", BCP 72, RFC 3552,
@@ -266,13 +271,8 @@ Authors' Addresses
    Philadelphia, PA 19103
    United States of America
 
-   Phone: +1 215 286 5894
-   Email: yiu_lee@comcast.com
-
-
-
-
-
+   Phone: +1 215 286 7407
+   Email: jason_livingood@comcast.com
 
 
 

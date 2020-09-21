@@ -4,11 +4,13 @@ We are working to gather a list of potential collaborators or others that may ha
 ## Companies
 - Cujo
 - Cisco
-- LiberyMutul (Virgin Media)
+- Liberty Global (Virgin Media)
 - Plume
 - WiFi equipment vendors
 - ISPs and WISPs
-- WiFi network operators
+- WiFi roaming network operators
+  - Boingo
+  - Ipass
 
 ## People
 - Kyle Johnson <Kyle.Johnson@charter.com>

@@ -14,7 +14,7 @@ Major operating systems have implemented and deployed MAC Address randomization 
 ### - Status: 
 (not) WG Forming
 ### - Responsible AD: 
-TBD - Maybe Transport Area
+Internet Area (INT)
 ### - BoF proponents: 
 Jason Weil <Jason.Weil@charter.com>, Yiu Lee <Yiu_Lee@comcast.com>, Jason Livingood <Jason_Livingood@comcast.com>
 ### - BoF chairs: 

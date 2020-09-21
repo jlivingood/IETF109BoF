@@ -195,40 +195,43 @@
     <section numbered="true" toc="default">
       <name>Problem Statement</name>
 
-        <t>Recently, more and more privacy concerns are related to the
-        static MAC address. In particular, security community worries about
-        people being able to tie the MAC address to a particular device. This
-        may enable device tracking and tracing. To address the privacy concern,
-        MAC address randomization is developed. MAC address randomization is a
-        technique similar to IPv6 temporary IIDs defined in <xref target="RFC7217"
-        format="default">RFC 7217</xref>. Devices will auto-generate the MAC
-        address based on the device policy and use the random generated MAC address
-        instead of the hardware based MAC address assigned by the manufacturer when
-        they connect to the network. Many modern Operation Systems
-        such as Apple iOS (https://support.apple.com/en-us/HT211227),
-        Google Android (https://source.android.com/devices/tech/connect/wifi-mac-randomization)
-        and Microsoft Windows 10 (https://support.microsoft.com/en-us/help/4027925/windows-how-and-why-to-use-random-hardware-addresses)
-        are experimenting MAC addresses randomization. The randomization policy could be time based, network
-        based, combination of both and more. MAC address randomization is a
-        important step forward to protect user privacy. However, it will
-        break some applications that make assumptions of the MAC address.</t>
+        <t>Recently, privacy concerns have been raised related to persistent (static) MAC Addresses (refs needed). In 
+		particular, the privacy security communities worry about the risks associated with being able to 
+		associate a MAC Address to a particular device and/or person (refs needed). While networks and application 
+		have long used MAC Addresses to enable end user services, the concern that this may be abused such as for 
+		data monetization purposed led to the development of techniques to randomize MAC Addresses (though 
+		some research disputes the efficacy of that, ref needed). </t>
+	    
+	    <t>MAC Address randomization is a technique similar to IPv6 temporary IIDs defined in <xref target="RFC7217"
+        format="default">RFC 7217</xref>. Devices will auto-generate the MAC Address based on the device policy and use 
+		    the random generated MAC Address instead of the hardware based MAC Address assigned by the manufacturer 
+		    when they connect to the network. Many modern Operation Systems such as Apple iOS 
+		    (https://support.apple.com/en-us/HT211227), Google Android 
+		    (https://source.android.com/devices/tech/connect/wifi-mac-randomization) and Microsoft Windows 10 
+		    (https://support.microsoft.com/en-us/help/4027925/windows-how-and-why-to-use-random-hardware-addresses) 
+		    are experimenting with MAC Address randomization. The randomization policy could be time based, network 
+		    based, a combination of both or involve other factors. MAC Address randomization may be one of many 
+		    tactics to protect end user privacy but it can also break some network and application services that 
+		    make assumptions about the persistence of MAC Address when they were designed and developed.</t>
 
-        <t> In some circumstances, users may want to give the trusted network
-          (e.g., home network) some predictability of the MAC address for some
-          important services. For example, whitelisting MAC address for network
-          access. This document defines a set of problem statements to continue
-          the existing LAN services when MAC address is randomized.</t>
+        <t>There are perhaps some use cases in which a balance between persistence and randomization may be found. In 
+		some circumstances, users may want to give a trusted network
+          (e.g., home network) some predictability of the MAC Address in order to enable some
+          important and valuable to end user services. This document defines a set of problem statements to continue
+          the existing network and application services when MAC Addresses are randomized. These are defined by "PS" for 
+		Problem Statement below:</t>
 
-        <t>[PS-01] Internet Service Provider (ISP) must not make any assumption
-          about the MAC address</t>
-        <t>[PS-02] ISP must not make any assumption of the Randomization
-            Policy</t>
-        <t>[PS-03] LAN policy must not tie to a fixed MAC address</t>
+        <t>[PS-01] An Internet Service Provider (ISP) or other network operator must not make any assumption
+          about the persistence of MAC Addresses.</t>
+        <t>[PS-02] An ISP or other network operator must not make any assumption of the Randomization
+            Policy for MAC Addresses.</t>
+        <t>[PS-03] LAN policies must not depend upon a fixed, persistent MAC Address.</t>
         <t>[PS-04] A mechanism must be defined to securely identify a device.
-          The mechanism can leverage existing protocols (e.g., EAP) or newly
+          The mechanism can leverage existing protocols (e.g., EAP) or a newly
           defined protocol.</t>
-        <t>[PS-05] ISP and device may leverage existing protocol or define a new
-          mechanism to exchange information about MAC address randomization</t>
+        <t>[PS-05] ISP or other network operators, device manufacturers, and operating system developers may 
+		leverage existing protocols or define a new
+          mechanism to exchange information about MAC Address randomization.</t>
 
     </section>
 
@@ -279,25 +282,8 @@
     </section>
     <!-- Change Log
 
-v00 2006-03-15  EBD   Initial version
-
-v01 2006-04-03  EBD   Moved PI location back to position 1 -
-                     v3.1 of XMLmind is better with them at this location.
-v02 2007-03-07  AH    removed extraneous nested_list attribute,
-                     other minor corrections
-v03 2007-03-09  EBD   Added comments on null IANA sections and fixed heading capitalization.
-                     Modified comments around figure to reflect non-implementation of
-                     figure indent control.  Put in reference using anchor="DOMINATION".
-                     Fixed up the date specification comments to reflect current truth.
-v04 2007-03-09 AH     Major changes: shortened discussion of PIs,
-                     added discussion of rfc include.
-v05 2007-03-10 EBD    Added preamble to C program example to tell about ABNF and alternative
-                     images. Removed meta-characters from comments (causes problems).
-
-v06 2010-04-01 TT     Changed ipr attribute values to latest ones. Changed date to
-                     year only, to be consistent with the comments. Updated the
-                     IANA guidelines reference from the I-D to the finished RFC.
-v07 2020-01-21 HL    Converted the template to use XML schema version 3.
+v00 	2020-09-18	Initial version
+v01	2020-09-XX	Update with edits suggested by JL
     -->
  </back>
 </rfc>

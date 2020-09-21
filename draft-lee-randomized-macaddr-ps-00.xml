@@ -174,9 +174,8 @@
 
         <t>Major operating systems have implemented and deployed MAC address randomization
         to improve device and user privacy. It is common practice on many types of networks
-        today to use the  MAC address as a form of device identification. Some examples
-        are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and
-        MAC address ACL for blocking malicious or unwanted devices. We are interested
+        today to use the  MAC address as a form of device identification. This practice will
+        break some applications and policies at the IP layer and Transport layer. We are interested
         in determining if there is sufficient support in the IETF community to define
         best practices and potentially a new protocol for service continuity in the
         presence of MAC address randomization.</t>

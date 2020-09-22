@@ -9,7 +9,7 @@
 <rfc
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="info"
-      docName="draft-lee-randomized-macaddr-ps-00"
+      docName="draft-lee-randomized-macaddr-ps-01"
       ipr="trust200902"
       obsoletes=""
       updates=""
@@ -34,7 +34,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="Abbreviated Title">Problem Statements for MAC Address Randomization</title>
-    <seriesInfo name="Internet-Draft" value="draft-lee-randomized-macaddr-ps-00"/>
+    <seriesInfo name="Internet-Draft" value="draft-lee-randomized-macaddr-ps-01"/>
     <!-- add 'role="editor"' below for the editors if appropriate -->
 
    <!-- Another author who claims to be an editor -->
@@ -153,12 +153,12 @@
 		or assumed that MAC Addresses would not be limitlessly randomized. Many network and application services 
 		today rely upon a persistent MAC Address to uniquely identify a device. For example: "Sticky" DHCP assignment 
 		can enable a device to retain the same IP address for an extended time and this often maps IP to MAC 
-		address. Borken sticky MAC address to IP assignment will break some local network policies such as persistent 
+		address. Broken sticky MAC address to IP assignment will break some local network policies such as persistent 
     network address port translation (NAPT) 
 		port-forwarding, demilitarized zone setup (DMZ, or safe zone) and LAN Quality of Service (QoS), application 
 		of security policies (i.e. IoT devices have one firewall policy while tablets have another), parental controls 
 		(e.g. device X belongs to child 1 &amp; access to the network is not permitted between 22:00-06:00 hours) are all 
-		typically based on persistent MAC Address for device identificaton. There are also business policies that have depended upon 
+		typically based on persistent MAC Address for device identification. There are also business policies that have depended upon 
 		persistent MAC address such as hospitality Internet service used in hotels, airplanes, and community WiFi 
 		often uses MAC address to tie to Internet subscription (e.g. after initial authorization the MAC Address 
 		is added to the allow list &amp; subsequent authorization on every new connection is unnecessary).</t>

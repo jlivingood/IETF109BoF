@@ -123,9 +123,10 @@
   <middle>
     <section numbered="true" toc="default">
       <name>Introduction</name>
-      <t>A Network Interface Card (NIC) needs a locally unique address in order to connect to a network. The IEEE [ref needed] 
-	      created the Media Access Control (MAC) Address for use by any IEEE 802 network link layer standard protocols 
-	      (e.g. Ethernet & WiFi). A MAC Address is 48 bits long and is usually defined in the hardware by the 
+      <t>A Network Interface Card (NIC) needs a locally unique address in order to connect to a network. The IEEE
+      <xref target="IEEE.802-1D.1993"/> 
+	      created the Media Access Control (MAC) Address for use by any IEEE 802 link layer standard protocols 
+	      (e.g. Ethernet &amp; WiFi). A MAC Address is 48 bits long and is usually defined in the hardware by the 
 	      NIC manufacturer. A device can have one or more MAC addresses; for example an IoT device may have a single 
 	      WiFi interface and one MAC Address but a laptop may have three interfaces that encompass two wired Ethernet 
 	      ports and a WiFi interface, and therefore will have three MAC addresses. MAC Addresses must be locally unique 
@@ -133,42 +134,34 @@
 
         <t>The device manufacturer typically assigns the MAC address to an interface.
         Unless the user or operating system modifies the MAC address, which is
-        sometimes the case, the MAC address follows a defined format and uses 2 parts.
-        Those are Manufacturer ID and Interface ID. In a typical MAC address,
-        the first 3 bytes correspond to the organization that created the device,
-        called the Organizationally Unique Identifier (OUI). This OUI portion
-        uniquely identifies a manufacturer, vendor, or other organization, and
-        is assigned by the IEEE from their IEEE Registration Authority.
-        The second 3 bytes of the MAC address, the Network Interface Controller
-        (NIC) portion, is an identifier assigned by the manufacturer (or whatever
-        organization was assigned the OUI). Because of how MAC addresses are
-        constructed, a MAC address may contain information from which an
-        actor/service on a local network can infer the type and/or manufacturer
-        of the device, which is useful for a variety of operational and
-        troubleshooting reasons. For example, a MAC address can be used to
+        sometimes the case. Because of the static nature of the manufacturer's 
+        MAC addresses, a MAC address is used for device identification 
+        for a variety of operational and
+        troubleshooting reasons in the LAN (e.g., home network). 
+        For example, a MAC address can be used to
         determine to which device on a LAN to permit or deny access at a
         particular time of day (e.g. child's tablet may not access Internet
-        after 22:00 hrs until 06:00 hrs). Such services often rely on a database
-        or other method to map MAC addreses to a likely device make and model,
-        such as using a commercial service from Fingerbank,
-        https://fingerbank.org/about/, after which the user would then label
-        the device (e.g. Jane’s iPhone).</t>
+        after 22:00 hrs until 06:00 hrs).</t>
 	    
-	    <t>[JL suggestion - greatly simplify & shorten the prior para & refer mostly to IEEE specs or a summary thereof]</t>
+	    <!--
+        [JL suggestion - greatly simplify &amp; shorten the prior para &amp; refer mostly to IEEE specs or a summary thereof]
+      -->
 	    
-        <t>Privacy concerns have led some operating systems developers to implement MAC Address randomization [refs needed]. 
-		However, this can pose problems for network and application services that rely upon tracking MAC Addresses 
+        <t>Privacy concerns have led some operating systems developers to implement MAC Address randomization 
+        [IEEE.802.11AQ]. However, this can pose problems for network and application services that rely upon 
+        the manufacturer's MAC Addresses 
 		or assumed that MAC Addresses would not be limitlessly randomized. Many network and application services 
 		today rely upon a persistent MAC Address to uniquely identify a device. For example: "Sticky" DHCP assignment 
 		can enable a device to retain the same IP address for an extended time and this often maps IP to MAC 
-		address. In additional, many local network policies such as network address port translation (NAPT) 
+		address. Borken sticky MAC address to IP assignment will break some local network policies such as persistent 
+    network address port translation (NAPT) 
 		port-forwarding, demilitarized zone setup (DMZ, or safe zone) and LAN Quality of Service (QoS), application 
 		of security policies (i.e. IoT devices have one firewall policy while tablets have another), parental controls 
-		(e.g. device X belongs to child 1 & access to the network is not permitted between 22:00-06:00 hours) are all 
-		typically based on persistent MAC Address. There are also business policies that have depended upon 
+		(e.g. device X belongs to child 1 &amp; access to the network is not permitted between 22:00-06:00 hours) are all 
+		typically based on persistent MAC Address for device identificaton. There are also business policies that have depended upon 
 		persistent MAC address such as hospitality Internet service used in hotels, airplanes, and community WiFi 
 		often uses MAC address to tie to Internet subscription (e.g. after initial authorization the MAC Address 
-		is added to the allow list & subsequent authorization on every new connection is unnecessary).</t>
+		is added to the allow list &amp; subsequent authorization on every new connection is unnecessary).</t>
 
 	<t>Thus, many network and application services have developed over many years that are dependent upon persistent 
 		MAC Addresses. This could be in tension with the move of major operating systems to deploy MAC Address 
@@ -195,15 +188,15 @@
     <section numbered="true" toc="default">
       <name>Problem Statement</name>
 
-        <t>Recently, privacy concerns have been raised related to persistent (static) MAC Addresses (refs needed). In 
+        <t>Recently, privacy concerns have been raised related to persistent (static) MAC Addresses. In 
 		particular, the privacy security communities worry about the risks associated with being able to 
 		associate a MAC Address to a particular device and/or person (refs needed). While networks and application 
 		have long used MAC Addresses to enable end user services, the concern that this may be abused such as for 
 		data monetization purposed led to the development of techniques to randomize MAC Addresses (though 
 		some research disputes the efficacy of that, ref needed). </t>
 	    
-	    <t>MAC Address randomization is a technique similar to IPv6 temporary IIDs defined in <xref target="RFC7217"
-        format="default">RFC 7217</xref>. Devices will auto-generate the MAC Address based on the device policy and use 
+	    <t>MAC Address randomization is a technique similar to IPv6 temporary IIDs defined in <xref target="RFC7217"/>. 
+      Devices will auto-generate the MAC Address based on the device policy and use 
 		    the random generated MAC Address instead of the hardware based MAC Address assigned by the manufacturer 
 		    when they connect to the network. Many modern Operation Systems such as Apple iOS 
 		    (https://support.apple.com/en-us/HT211227), Google Android 
@@ -274,6 +267,7 @@
 
    <references title="Informative References">
      <?rfc include="reference.RFC.7217.xml" ?>
+     <?rfc include="reference.IEEE.802-1D.1993.xml" ?>
    </references>
 
     <section anchor="app-additional" numbered="true" toc="default">

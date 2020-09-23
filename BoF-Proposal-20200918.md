@@ -24,7 +24,7 @@ TBD
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 
 2 hours
 ### - Conflicts to avoid (whole Areas and/or WGs): 
-TBD
+homenet, anima, emu, iotops(BOF), 
 
 ### - Agenda
    - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md

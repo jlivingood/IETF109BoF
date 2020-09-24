@@ -9,7 +9,7 @@
 <rfc
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="info"
-      docName="draft-lee-randomized-macaddr-ps-01"
+      docName="draft-lee-randomized-macaddr-ps-02"
       ipr="trust200902"
       obsoletes=""
       updates=""
@@ -34,7 +34,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="Abbreviated Title">Problem Statements for MAC address Randomization</title>
-    <seriesInfo name="Internet-Draft" value="draft-lee-randomized-macaddr-ps-01"/>
+    <seriesInfo name="Internet-Draft" value="draft-lee-randomized-macaddr-ps-02"/>
     <!-- add 'role="editor"' below for the editors if appropriate -->
 
    <!-- Another author who claims to be an editor -->
@@ -43,12 +43,12 @@
       <organization>Comcast</organization>
       <address>
         <postal>
-          <street>1800 Arch Street</street>
-         <city>Philadelphia</city>
-          <region>PA</region>
-          <code>19103</code>
-          <country>USA</country>
-        </postal>
+        <street/>
+          <city/>
+           <region/>
+           <code/>
+           <country>USA</country>
+         </postal>
         <email>yiu_lee@comcast.com</email>
         <!-- uri and facsimile elements may also be added -->
      </address>
@@ -58,10 +58,10 @@
        <organization>Comcast</organization>
        <address>
          <postal>
-           <street>1800 Arch Street</street>
-          <city>Philadelphia</city>
-           <region>PA</region>
-           <code>19103</code>
+           <street/>
+          <city/>
+           <region/>
+           <code/>
            <country>USA</country>
          </postal>
          <email>jason_livingood@comcast.com</email>
@@ -76,12 +76,29 @@
            <street/>
            <!-- Reorder these if your country does things differently -->
 
-          <city>Orlando</city>
-           <region>FL</region>
+          <city/>
+           <region/>
            <code/>
            <country>USA</country>
          </postal>
          <email>Jason.Weil@charter.com</email>
+         <!-- uri and facsimile elements may also be added -->
+      </address>
+     </author>
+
+<author fullname="Mohamed Boucadair" initials="M" surname="Boucadair">
+       <organization>Orange</organization>
+       <address>
+         <postal>
+           <street/>
+           <!-- Reorder these if your country does things differently -->
+
+          <city>Rennes</city>
+           <region/>
+           <code>35000</code>
+           <country>France</country>
+         </postal>
+         <email>mohamed.boucadair@orange.com</email>
          <!-- uri and facsimile elements may also be added -->
       </address>
      </author>
@@ -149,7 +166,9 @@
       -->
 	    
         <t>Privacy concerns have led some operating systems developers to implement MAC address randomization 
-        [IEEE.802.11AQ]. However, this can pose problems for network and application services that rely upon 
+        [IEEE.802.11AQ]. 
+        
+        However, this can pose problems for network and application services that rely upon 
         the manufacturer's MAC addresses 
 		or assumed that MAC addresses would not be limitlessly randomized. Many network and application services 
 		today rely upon a persistent MAC address to uniquely identify a device. For example: "Sticky" DHCP assignment 
@@ -217,14 +236,14 @@
           the existing network and application services when MAC addresses are randomized. These are defined by "PS" for 
 		Problem Statement below:</t>
 
-        <t>[PS-01] An Internet Service Provider (ISP) or other network operator must not make any assumption
+        <t>[PS-01] An Internet Service Provider (ISP) or other network operator MUST NOT make any assumption
           about the persistence of MAC addresses.</t>
         <t>[PS-02] An ISP or other network operator must not make any assumption of the Randomization
             Policy for MAC addresses.</t>
-        <t>[PS-03] LAN policies must not depend upon a fixed, persistent MAC address.</t>
-        <t>[PS-04] A mechanism must be defined to securely identify a device.
-          The mechanism can leverage existing protocols (e.g., EAP) or a newly
-          defined protocol.</t>
+        <t>[PS-03] LAN policies SHOULD NOT depend upon a fixed, persistent MAC address.</t>
+        <t>[PS-04] A mechanism MUST be defined to securely identify a device.
+          The mechanism MAY leverage existing protocols (e.g., EAP <xref target="RFC3743"/>) or a newly
+          defined protocol or protocol extension.</t>
         <t>[PS-05] ISP or other network operators, device manufacturers, and operating system developers may 
 		leverage existing protocols or define a new
           mechanism to exchange information about MAC address randomization.</t>
@@ -265,6 +284,7 @@
     <references title="Normative References">
       <?rfc include="reference.RFC.2119.xml" ?>
       <?rfc include="reference.RFC.3552.xml" ?>
+      <?rfc include="reference.RFC.3743.xml" ?>
       <?rfc include="reference.RFC.5226.xml" ?>
    </references>
 

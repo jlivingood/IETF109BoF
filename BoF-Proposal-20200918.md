@@ -24,7 +24,7 @@ TBD
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 
 2 hours
 ### - Conflicts to avoid (whole Areas and/or WGs): 
-TBD
+add, anima, dhc, dmm, dnssd, dprive, drip, emu, hip, homenet, intarea, iotops (BoF)
 
 ### - Agenda
    - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md

@@ -33,7 +33,7 @@ add, anima, capport, dhc, dmm, dnssd, dprive, drip, emu, hip, homenet, intarea, 
    - Draft charter: N/A
    - Relevant drafts/RFCCs:
    
-  https://tools.ietf.org/html/rfc8386
-  https://datatracker.ietf.org/doc/rfc7824
-  https://datatracker.ietf.org/doc/rfc7844
+  - https://tools.ietf.org/html/rfc8386
+  - https://datatracker.ietf.org/doc/rfc7824
+  - https://datatracker.ietf.org/doc/rfc7844
    

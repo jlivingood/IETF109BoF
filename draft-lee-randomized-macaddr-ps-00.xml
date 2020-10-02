@@ -212,19 +212,21 @@
           (e.g., home network) some predictability of the MAC Address in order to enable some
           important and valuable to end user services. This document defines a set of problem statements to continue
           the existing network and application services when MAC Addresses are randomized. These are defined by "PS" for 
-		Problem Statement below:</t>
-
-        <t>[PS-01] An Internet Service Provider (ISP) or other network operator must not make any assumption
+		Problem Statement below:
+        <list style="format PS%d:">
+        	<t>An Internet Service Provider (ISP) or other network operator must not make any assumption
           about the persistence of MAC Addresses.</t>
-        <t>[PS-02] An ISP or other network operator must not make any assumption of the Randomization
+        	<t>An ISP or other network operator must not make any assumption of the Randomization
             Policy for MAC Addresses.</t>
-        <t>[PS-03] LAN policies must not depend upon a fixed, persistent MAC Address.</t>
-        <t>[PS-04] A mechanism must be defined to securely identify a device.
+        	<t>LAN policies must not depend upon a fixed, persistent MAC Address.</t>
+        	<t>A mechanism must be defined to securely identify a device.
           The mechanism can leverage existing protocols (e.g., EAP) or a newly
           defined protocol.</t>
-        <t>[PS-05] ISP or other network operators, device manufacturers, and operating system developers may 
+        	<t>ISP or other network operators, device manufacturers, and operating system developers may 
 		leverage existing protocols or define a new
           mechanism to exchange information about MAC Address randomization.</t>
+	    </list>
+	    </t>
 
     </section>
 
@@ -277,7 +279,8 @@
     <!-- Change Log
 
 v00 	2020-09-18	Initial version
-v01	2020-09-XX	Update with edits suggested by JL
+v01	2020-09-22	Update with edits suggested by JL
+v01	2020-09-XX	Fixed nits in XML for requirement list
     -->
  </back>
 </rfc>

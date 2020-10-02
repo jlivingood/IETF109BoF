@@ -36,6 +36,7 @@ MAC Address Device Identification for Network and Application Services
     -- Device-to-user or group association to restrict or authorize unwanted or unverified device connections to the LAN 
 
 ## Discussion, Interest & Next Steps -- 30 Mins (BoF Chair w/AD Support)
+- What other SSOs are working on this topic or related topics & how to best coordinate?
 - Identify community of interest 
 - Document all major use cases currently deployed
 - Define best practices for enabling service continuity in the presence of MAC Address randomization

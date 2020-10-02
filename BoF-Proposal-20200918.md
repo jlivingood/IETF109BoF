@@ -20,7 +20,7 @@ Jason Weil <Jason.Weil@charter.com>, Yiu Lee <Yiu_Lee@comcast.com>, Jason Living
 ### - BoF chairs: 
 TBD
 ### - Number of people expected to attend: 
-50+
+100
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 
 1.5 hours
 ### - Conflicts to avoid (whole Areas and/or WGs): 

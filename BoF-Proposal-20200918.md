@@ -22,7 +22,7 @@ TBD
 ### - Number of people expected to attend: 
 100
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 
-1.5 hours
+2 hours
 ### - Conflicts to avoid (whole Areas and/or WGs): 
 add, anima, capport, dhc, dmm, dnssd, dprive, drip, emu, hip, homenet, intarea, iotops (BoF)
 

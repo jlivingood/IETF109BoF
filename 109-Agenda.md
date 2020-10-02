@@ -16,14 +16,23 @@ MAC Address Device Identification for Network and Application Services
 
 ### Use Cases -- 30 Mins
 - Residential Home Network (several speakers TBD)
+
     -- LAN gateway NAPT forwarding & static NAPT policies 
+    
     -- Persistent DHCP IP address assignments
+    
     -- Device-to-user or group association for malware protection & parental controls 
+    
 - Enterprise Network (Yiu Lee or TBD)
+
     -- LAN gateway NAPT forwarding & static NAPT policies 
+    
     -- Persistent DHCP IP address assignments
+    
 - Persistent DHCP IP address assignments - (presenter TBD)
+
 - Community WiFi (presenter TBD)
+
     -- Device-to-user or group association to restrict or authorize unwanted or unverified device connections to the LAN 
 
 ## Discussion, Interest & Next Steps -- 30 Mins (BoF Chair w/AD Support)

@@ -1,7 +1,7 @@
 # DRAFT Agenda for IETF-109 BoF - MADINAS
 MAC Address Device Identification for Network and Application Services
 
-1.5 Hours
+2 Hours
 
 ## Welcome & Agenda Review (BoF Chair)
 

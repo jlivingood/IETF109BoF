@@ -8,10 +8,13 @@ MAC Address Device Identification for Network and Application Services
 ## Background - Problem Statement & Use Cases -- 10 Mins
 - One presentation, 2-4 slides, link TBD - (Jason Weil and/or Yiu Lee)
 
+## Privacy Overview -- 10 Mins
+- Overview of privacy goals, requirements and prior work in the IETF
+
 ### Problem Definition -- 10 Mins
 - Overview of OS deployment of MAC Address randomization, 2 slides, link TBD - (Jason Weil and/or Yiu Lee)
 
-### Use Cases -- 40 Mins
+### Use Cases -- 30 Mins
 - LAN gateway NAPT forwarding - (PRESENTER TBD)
 - Static NAPT policies - (PRESENTER TBD)
 - Persistent DHCP IP address assignments - (PRESENTER TBD)

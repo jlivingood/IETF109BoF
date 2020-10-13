@@ -36,6 +36,7 @@ Background: MAC address based Device Identity
 
 ### Problem Definition -- 10 Mins
 - Overview of OS deployment of MAC Address randomization, 2 slides, link TBD - (Jason Weil and/or Yiu Lee)
+##
 - High-light the work in IEEE, WFA and BBF
 - In the light of mac address randomation, the presented use cases may be impacted. This will create inconventience and unintended consequences for both users and operators.
 - Seeking for guidelines and best practices for applications and services to behave better in the presence of mechanisms such as MAC address randomization.

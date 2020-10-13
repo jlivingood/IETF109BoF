@@ -8,7 +8,7 @@ MAC Address Device Identification for Network and Application Services
 
 ## Background - Problem Statement & Use Cases -- 10 Mins
 - One presentation, 2-4 slides, link TBD - (Jason Weil and/or Yiu Lee)
-## Background
+### Background
 - MAC address privacy (e.g., OUI, traceability, refer to IEEE privacy doc). MAC address is sending over clear text 
 - How MAC address randomization addresses the privacy
 - How MAC address randomization is implemented today
@@ -16,8 +16,8 @@ MAC Address Device Identification for Network and Application Services
 ~ How Community Wi-Fi and Hospitality network use MAC address to provide services ~
 ~ How Campus and Enterprise Wi-Fi networks use MAC address to provide services ~
 
-### Use Cases -- 60 Mins
-## Home Network Use Cases
+## Use Cases -- 60 Mins
+### Home Network Use Cases
 Background: MAC address based Device Identity
 - Use case for diagonstic and customer support (Simon, BT)
 - Use case for Wi-Fi band and AP steering (Simon, BT)
@@ -26,18 +26,17 @@ Background: MAC address based Device Identity
 - Use case for access controls / parental controls - (Charter)
 - Use case for service policy based on device identity (Sky, TBD)
 
-## Community Wi-Fi and Hospitality Use Cases
+### Community Wi-Fi and Hospitality Use Cases
 - Use case for auto-authentication for Open SSID (Comcast, Rajat)
 - Use case for hotel, airplane and public facility (vendor)
 - Use case for UE mobility in Wi-Fi (Ajay, Benu Networks)
 
 
-## Enterprise Use Cases
+### Enterprise Use Cases
 
 
-### Problem Definition -- 10 Mins
+## Problem Definition -- 10 Mins
 - Overview of OS deployment of MAC Address randomization, 2 slides, link TBD - (Jason Weil and/or Yiu Lee)
-##
 - High-light the work in IEEE, WFA and BBF
 - In the light of mac address randomation, the presented use cases may be impacted. This will create inconventience and unintended consequences for both users and operators.
 - Seeking for guidelines and best practices for applications and services to behave better in the presence of mechanisms such as MAC address randomization.

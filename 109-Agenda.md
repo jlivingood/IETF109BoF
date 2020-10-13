@@ -12,9 +12,9 @@ MAC Address Device Identification for Network and Application Services
 - MAC address privacy (e.g., OUI, traceability, refer to IEEE privacy doc). MAC address is sending over clear text 
 - How MAC address randomization addresses the privacy
 - How MAC address randomization is implemented today
-## How residential network provider (both retailed and ISP) uses MAC addresses to provide services
-## How Community Wi-Fi and Hospitality network use MAC address to provide services
-## How Campus and Enterprise Wi-Fi networks use MAC address to provide services
+~ How residential network provider (both retailed and ISP) uses MAC addresses to provide services ~
+~ How Community Wi-Fi and Hospitality network use MAC address to provide services ~
+~ How Campus and Enterprise Wi-Fi networks use MAC address to provide services ~
 
 ### Use Cases -- 60 Mins
 ## Home Network Use Cases
@@ -36,7 +36,6 @@ Background: MAC address based Device Identity
 
 ### Problem Definition -- 10 Mins
 - Overview of OS deployment of MAC Address randomization, 2 slides, link TBD - (Jason Weil and/or Yiu Lee)
-##
 - High-light the work in IEEE, WFA and BBF
 - In the light of mac address randomation, the presented use cases may be impacted. This will create inconventience and unintended consequences for both users and operators.
 - Seeking for guidelines and best practices for applications and services to behave better in the presence of mechanisms such as MAC address randomization.

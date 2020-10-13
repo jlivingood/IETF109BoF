@@ -12,9 +12,9 @@ MAC Address Device Identification for Network and Application Services
 - MAC address privacy (e.g., OUI, traceability, refer to IEEE privacy doc). MAC address is sending over clear text 
 - How MAC address randomization addresses the privacy
 - How MAC address randomization is implemented today
-~~How residential network provider (both retailed and ISP) uses MAC addresses to provide services~~
-~~How Community Wi-Fi and Hospitality network use MAC address to provide services~~
-~~How Campus and Enterprise Wi-Fi networks use MAC address to provide services~~
+~ How residential network provider (both retailed and ISP) uses MAC addresses to provide services ~
+~ How Community Wi-Fi and Hospitality network use MAC address to provide services ~
+~ How Campus and Enterprise Wi-Fi networks use MAC address to provide services ~
 
 ### Use Cases -- 60 Mins
 ## Home Network Use Cases
@@ -29,6 +29,7 @@ Background: MAC address based Device Identity
 ## Community Wi-Fi and Hospitality Use Cases
 - Use case for auto-authentication for Open SSID (Comcast, Rajat)
 - Use case for hotel, airplane and public facility (vendor)
+- Use case for UE mobility in Wi-Fi (Ajay, Benu Networks)
 
 
 ## Enterprise Use Cases

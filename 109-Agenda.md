@@ -19,8 +19,8 @@ MAC Address Device Identification for Network and Application Services
 ## Use Cases -- 60 Mins
 ### Home Network Use Cases
 Background: MAC address based Device Identity
-- Use case for diagonstic and customer support (Simon, BT)
-- Use case for Wi-Fi band and AP steering (Simon, BT)
+- Use case for diagonstic and customer support (Simon Ringland, BT)
+- Use case for Wi-Fi band and AP steering (Simon Ringland, BT)
 - Use case to setup a server at home - (Yiu Lee, Comcast)
 - Use case to protect DDoS mitigation - (Med, Orange)
 - Use case for access controls / parental controls - (Charter)

@@ -9,7 +9,7 @@ The purpose of a BOF is to conduct a single, brief discussion or to ascertain in
 ### Name: MAC Address Device Identification for Network and Application Services (MADINAS)
 
 ### Description: 
-Major operating systems have implemented and deployed MAC Address randomization to improve device and user privacy. It is common practice on many types of networks today to use the  MAC Address as a form of device identification. Some examples are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and MAC address ACL for blocking malicious or unwanted devices. We are interested in determining if there is sufficient support in the IETF community to define best practices and potentially a new protocol for service continuity in the presence of MAC Address randomization.
+Major operating systems have implemented and deployed MAC Address randomization to improve device and user privacy. It is common practice on many types of networks today to use the MAC Address as a form of device identification. Some examples are LAN forwarding policy, sticky DHCP IP assignments, static NAT policy and MAC address ACL for blocking malicious or unwanted devices. We are interested in determining if there is sufficient support in the IETF community to define best practices and potentially a new protocol for service continuity in the presence of MAC Address randomization.
 
 ### - Status: 
 non WG Forming

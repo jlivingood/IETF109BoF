@@ -19,7 +19,7 @@ Internet Area (INT)
 ### - BoF proponents: 
 Jason Weil <Jason.Weil@charter.com>, Yiu Lee <Yiu_Lee@comcast.com>, Jason Livingood <Jason_Livingood@comcast.com>
 ### - BoF chairs: 
-Juan Carlos Zuniga <j.c.zuniga@ieee.org> and Stephen Farrell <stephen.farrell@cs.tcd.ie>
+Juan Carlos Zuniga <j.c.zuniga@ieee.org> and TBD
 ### - Number of people expected to attend: 
 100
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 

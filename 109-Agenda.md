@@ -30,21 +30,14 @@ Background: MAC address based Device Identity
 ### Cloud Management -- 10 Mins
 - Use case for resource management when mac-address is randomized (Plume)
 
-## Problem Statement -- 10 Mins
-- Overview of OS deployment of MAC Address randomization, 2 slides, link TBD - (Jason Weil and/or Yiu Lee)
-- High-light the work in IEEE, WBA, WFA and BBF
-- In the light of mac address randomation, the presented use cases may be impacted. This will create inconventience and unintended consequences for both users and operators.
-- Seeking for recommendations and best practices for OS, applications and services to behave better in the presence of mechanisms such as MAC address randomization.
-
-## Discussion, Interest & Next Steps -- 20 Mins (BoF Chair w/AD Support)
-- What other SSOs are working on this topic or related topics & how to best coordinate?
-- Identify community of interest 
-- Document all major use cases currently deployed
-- Define best practices for enabling service continuity in the presence of MAC Address randomization
-- Potentially define a method for service continuity in the presence of MAC Address randomization
-- Whether the host OS shoud/must cooperate with the network
-- Whether the applications hosted on the endpoint should/must be aware and whether they should/must cooperate with the network or end-to-end service
-- Whether applications are sensitive to this MAC address randomization, ...
-- How frequenetly randomize the mac-address will have major impact to the system design and resource management
-- For enterprise Wi-Fi network, it is the users to authenticate themselves to the network. Is there a way for the network to present an identity and in-exchange the network can request some sticky information that can offer enhance services. 
-- Define a way for the device to communicate to the network about the mac addreess charcteristics (e.g., semi-persisent, random, etc)
+## Discussion, Interest & Next Steps -- 30 Mins (BoF Chair w/AD Support)
+- Questions:
+  -- What other SSOs are working on this topic or related topics & how to best coordinate?
+  -- Are there other communities of interest to be involved?
+- Potential Actions:
+  -- Document all major use cases currently deployed?
+  -- Define best practices for enabling service continuity in the presence of MAC Address randomization?
+  -- Define a method for network and application service continuity in the presence of MAC Address randomization?
+  -- Determine whether/how/when the host OS may cooperate with the network?
+  -- Identify better long term methods to enable network and applications services (alternatives to MAC addresses)?
+ - Next Steps

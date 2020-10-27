@@ -17,7 +17,7 @@ MAC Address Device Identification for Network and Application Services
 - Use case for diagonstic and customer support (Simon Ringland, BT)
 - Use case for Wi-Fi band and AP steering (Simon Ringland, BT)
 - Use case to setup a server at home - (Yiu Lee, Comcast)
-- Use case to protect DDoS mitigation - (Med, Orange)
+- Use case to protect DDoS mitigation - (Mohamed Boucadair, Orange) - https://github.com/boucadair/IETF109BoF/blob/master/madinas-ddos%20mitigation-use%20case-rev%2027102020.pdf
 - Use case for access controls / parental controls - (Charter)
 - Use case for service policy based on device identity (Plume)
 

@@ -13,7 +13,7 @@ MAC Address Device Identification for Network and Application Services
 - How operating systems implement today - Google / Android - TBD
 
 ## Use Cases
-### Home Network Use Cases -- 35 Mins
+### Home Network Use Cases -- 40 Mins
 - Use case for diagonstic and customer support (Simon Ringland, BT)
 - Use case for Wi-Fi band and AP steering (Simon Ringland, BT)
 - Use case to setup a server at home - (Yiu Lee, Comcast)
@@ -26,7 +26,7 @@ MAC Address Device Identification for Network and Application Services
 - Use case for UE mobility in Wi-Fi (Ajay, Benu Networks)
 - Use case for DHCP Table Exhaustion (ComScope, Eli)
 
-### Cloud Management -- 10 Mins
+### Cloud Management -- 5 Mins
 - Use case for resource management when mac-address is randomized (Plume)
 
 ## Discussion, Interest & Next Steps -- 30 Mins (BoF Chair w/AD Support)

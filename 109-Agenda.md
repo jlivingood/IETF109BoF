@@ -12,9 +12,8 @@ MAC Address Device Identification for Network and Application Services
 - How operating systems implement today - Apple / iOS - TBD
 - How operating systems implement today - Google / Android - TBD
 
-## Use Cases -- 35 Mins
-### Home Network Use Cases
-Background: MAC address based Device Identity
+## Use Cases
+### Home Network Use Cases -- 35 Mins
 - Use case for diagonstic and customer support (Simon Ringland, BT)
 - Use case for Wi-Fi band and AP steering (Simon Ringland, BT)
 - Use case to setup a server at home - (Yiu Lee, Comcast)

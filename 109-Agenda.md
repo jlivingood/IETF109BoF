@@ -8,7 +8,7 @@ MAC Address Device Identification for Network and Application Services
 
 
 ## Background -- 30 Mins
-- Short history/status about the work in IEEE 802 - Amelia Andersdotter
+- Short history/status about the work in IEEE 802 - Amelia Andersdotter, CENTR
 - How operating systems implement today - Apple / iOS - TBD
 - How operating systems implement today - Google / Android - TBD
 

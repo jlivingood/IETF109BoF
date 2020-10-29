@@ -4,7 +4,7 @@ MAC Address Device Identification for Network and Application Services
 2 Hours
 
 ## Welcome & Agenda Review (BoF Chair)
-- Juan Carlos Zuniga <j.c.zuniga@ieee.org>
+- Juan Carlos Zuniga, Sigfox <j.c.zuniga@ieee.org>
 
 
 ## Background -- 30 Mins

@@ -30,7 +30,7 @@ add, anima, capport, dhc, dmm, dnssd, dprive, drip, emu, hip, homenet, intarea, 
 ### - Agenda
    - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md
 ### - Links to the mailing list, draft charter if any, relevant Internet-Drafts, etc.
-   - Mailing List: Int Area Mailing list: https://www.ietf.org/mailman/listinfo/int-area
+   - Mailing List: Int Area Mailing list: https://www.ietf.org/mailman/listinfo/madinas
    - Draft charter: N/A
    - Relevant drafts/RFCCs:
    

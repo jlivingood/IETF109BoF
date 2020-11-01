@@ -8,7 +8,7 @@ MAC Address Device Identification for Network and Application Services
 
 
 ## Background -- 30 Mins
-- History/status about the work in IEEE 802 & WBA - Amelia Andersdotter, CENTR - https://datatracker.ietf.org/doc/html/draft-zuniga-mac-address-randomization-00
+- History/status about MAC address randomization work in IEEE 802 & WBA - Amelia Andersdotter, CENTR - https://datatracker.ietf.org/doc/html/draft-zuniga-mac-address-randomization-00
 - How operating systems implement today - Apple / iOS - TBD
 - How operating systems implement today - Google / Android - TBD
 

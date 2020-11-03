@@ -5,7 +5,7 @@ MAC Address Device Identification for Network and Application Services
 
 ## Welcome & Agenda Review (BoF Chair)
 - Juan Carlos Zuniga, Sigfox <j.c.zuniga@ieee.org>
-
+- Carlos Jesus Bernardos Cano <cjbc@it.uc3m.es>
 
 ## Background -- 30 Mins
 - History/status about MAC address randomization work in IEEE 802 & WBA - Amelia Andersdotter, CENTR - https://datatracker.ietf.org/doc/html/draft-zuniga-mac-address-randomization-00

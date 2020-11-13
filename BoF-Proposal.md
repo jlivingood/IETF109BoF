@@ -19,7 +19,7 @@ Internet Area (INT)
 ### - BoF proponents: 
 Jason Weil <Jason.Weil@charter.com>, Yiu Lee <Yiu_Lee@comcast.com>, Jason Livingood <Jason_Livingood@comcast.com>
 ### - BoF chairs: 
-Juan Carlos Zuniga <j.c.zuniga@ieee.org> and TBD
+Juan Carlos Zuniga <j.c.zuniga@ieee.org> and Carlos Jesus Bernardos Cano <cjbc@it.uc3m.es>
 ### - Number of people expected to attend: 
 100
 ### - Length of session (1, 1.5, 2, or 2.5 hours): 
@@ -30,7 +30,7 @@ add, anima, capport, dhc, dmm, dnssd, dprive, drip, emu, hip, homenet, intarea, 
 ### - Agenda
    - https://github.com/jlivingood/IETF109BoF/blob/master/109-Agenda.md
 ### - Links to the mailing list, draft charter if any, relevant Internet-Drafts, etc.
-   - Mailing List: Int Area Mailing list: https://www.ietf.org/mailman/listinfo/int-area
+   - Mailing List: Int Area Mailing list: https://www.ietf.org/mailman/listinfo/madinas
    - Draft charter: N/A
    - Relevant drafts/RFCCs:
    

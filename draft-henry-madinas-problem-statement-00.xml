@@ -9,7 +9,7 @@
 <rfc
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="info"
-      docName="draft-lee-randomized-macaddr-ps-00"
+      docName="draft-henry-madinas-problem-statement-00"
       ipr="trust200902"
       obsoletes=""
       updates=""
@@ -106,7 +106,7 @@
       a device and its user is made, identifying the device and its activity is sufficient 
       to deduce information about what the user is doing, without the user consent.</t>
 
-      <t>o reduce the risks of correlation between a device activity and its owner, multiple 
+      <t>To reduce the risks of correlation between a device activity and its owner, multiple 
       vendors have started to implement Rotating and Changing Mac address (RCM). With this 
       scheme, and end-device implements a different RCM over time when exchanging traffic 
       over a wireless network. By randomizing the change, the association between a given 
@@ -137,12 +137,13 @@
 
     <section numbered="true" toc="default">
       <name>MAC Adress As An Identity: User vs Device</name>
-      <t>Any device member of an IEEE 802 network includes several operating layers. Among them, the Media 
+      <t>Any device member of an IEEE 802 network <xref target="IEEE.802-1D.1993"/> 
+      includes several operating layers. Among them, the Media 
       Access Control (MAC) layer defines rules to control how the device accesses the shared medium. In a 
       network where a machine can communicate with one or more other machines, one such rule is that each 
       machine needs to be identified, either as the target destination of a message, or as the source of a 
       message (and thus the target destination of the answer). Initially intended as a 48-bit (6 octets) 
-      value, later versions of the Standard (802-2014) also allowed this address to take an extended 
+      value, later versions of the Standard <xref target="IEEE.802.15.4P_2014"/> also allowed this address to take an extended 
       format of 64 bits (8 octets), thus enabling a larger number of MAC addresses to coexist as the 
       802 technologies became widely adopted.</t>
 
@@ -165,7 +166,7 @@
       <t>It is also important to note that the purpose of the Universal version of the address was also 
       to avoid collisions and confusion, as any machine could connect to any network, and each machine needs 
       to determine if it is the intended destination of a message or its response. The same clause 5.2.1 
-      reminds network designers and operators that \all potential members of a network need to have a unique 
+      reminds network designers and operators that all potential members of a network need to have a unique 
       identifier (if they are going to coexist in the network). The advantage of a universal address is 
       that a node with such an address can be attached to any LAN in the world with an assurance that its 
       address is unique.</t>
@@ -422,6 +423,90 @@
 
       </section>
 
+       <section numbered="true" toc="default">
+        <name>Scenario Mapping Table</name>
+        <t>The previous section discuesses different settings that users and network operators have certain
+        expectations. The following table summarizes the expected degree of Trust, Privacy and Network Support</t>
+
+        <table anchor="table_example" align="center">
+          <name>Scenario Mapping Table</name>
+          <thead>
+            <tr>
+              <th align="center">Network Location</th>
+              <th align="center">Trust Degree</th>
+              <th align="center">Privacy Degree</th>
+              <th align="center">Network Serivces</th>
+              <th align="center">Network Support Skill Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">Home</td>
+              <td align="center">High</td>
+              <td align="center">Low</td>
+              <td align="center">Complex</td>
+              <td align="center">Low</td>
+            </tr>
+            <tr>
+              <td align="center">Campus</td>
+              <td align="center">Medium</td>
+              <td align="center">Medium</td>
+              <td align="center">Complex</td>
+              <td align="center">High</td>
+            </tr>
+            <tr>
+              <td align="center">Enterprise</td>
+              <td align="center">Medium</td>
+              <td align="center">Medium</td>
+              <td align="center">Complex</td>
+              <td align="center">High</td>
+            </tr>
+            <tr>
+              <td align="center">Hospitality</td>
+              <td align="center">Low</td>
+              <td align="center">Low</td>
+                            <td align="center">Simple</td>
+              <td align="center">Medium</td>
+            </tr>
+            <tr>
+              <td align="center">Public WiFi Access Point</td>
+              <td align="center">Low</td>
+              <td align="center">Low</td>
+                            <td align="center">Simple</td>
+              <td align="center">Low</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <t>For example: Home network is considered to be trusted and safe. User expects simple procedure to connect
+        to home newtork and all devices in the home network are trusted so that privacy isn't a major concern. Also,
+        user may run more than just simple Internet services. Home network can consist of many IoT devices and user
+        expect they will work seamlessly. User also expects the network operator detects and protects the home network
+        if needed (e.g., Parental Control). Most home users are average home users. They do not have deep networking 
+        skill to troubleshoot network protocols.</t>
+
+        <t>On the other end of the spectrum to the Home network, Public WiFi Access Point is considered to be
+        untrusted. Privacy is the number one concern. Most users connect to Public WiFi Access Point only require
+        simple Internt connectivity service. This is very different from Home network.</t>
+
+      </section>
+
+
+      <section numbered="true" toc="default">
+        <name>Problem Statments</name>
+        <t>The section describes the Problem Statements for MAC-Address Randamization &lt;vspace&gt;: </t>
+
+        <ol spacing="normal" type="REQ%d">
+          <li>Network must not make any assumption from the MAC address. </li>
+          <li>Rotate MAC address must maintain service continuity. If service is interrupted, there must be
+          a formal machanism to signal the network.</li>
+          <li>Network must provide a secure mechanism to inform the user its identity when the user attempts
+          to connecto the network. Based upon the network identity, user may choose different security setting to
+          join the network.</li>
+        </ol>
+
+      </section>
+
       <section numbered="true" toc="default">
         <name>Problem Solutions</name>
 
@@ -525,6 +610,8 @@
 
    <references title="Informative References">
      <?rfc include="reference.RFC.7217.xml" ?>
+      <?rfc include="reference.IEEE.802-1D.1993.xml" ?>
+      <?rfc include="reference.IEEE.802.15.4P_2014.xml" ?>
    </references>
 
     <section anchor="app-additional" numbered="true" toc="default">

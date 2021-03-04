@@ -37,7 +37,7 @@
     <!-- The abbreviated title is used in the page header - it is only necessary if the
         full title is longer than 39 characters -->
 
-   <title abbrev="Abbreviated Title">Randomized and Changing MAC Address Framework</title>
+   <title abbrev="RCM Framework">Randomized and Changing MAC Address Framework</title>
     <seriesInfo name="Internet-Draft" value="draft-henry-madinas-RCM-framework-00"/>
     <!-- add 'role="editor"' below for the editors if appropriate -->
 
@@ -499,7 +499,7 @@
         <name>Problem Statments</name>
         <t>The section describes the Problem Statements for MAC-Address Randomization &lt;vspace&gt;: </t>
 
-        <ol spacing="normal" type="REQ%d">
+        <ol spacing="normal" type="PS%d">
           <li>Unless trust is established, the network must not make any assumption about client MAC address continuity. </li>
           <li>MAC address must happen while allowing for service continuity. If a service is interrupted during the RCM process, there must be
           a formal mechanism for the client and the service to exchange about the interruption.</li>
@@ -511,8 +511,12 @@
       <section numbered="true" toc="default">
         <name>Existing Solutions Directions</name>
 
-	<t>Because the possible network disruptions related to RCM have been envisioned in the past, several directions have been suggested to alleviate these disruptions. None of them are formal enough to form a complete solution set. However, it may be useful to list them to provide a general suggested-solutions context. <t/>
-	<t>In environments of type 1 (settings of type a, b, d and/or e), the device or its user may 
+	      <t>Because the possible network disruptions related to RCM have been envisioned in the past, several 
+        directions have been suggested to alleviate these disruptions. None of them are formal enough to 
+        form a complete solution set. However, it may be useful to list them to provide a general 
+        suggested-solutions context. </t>
+
+      	<t>In environments of type 1 (settings of type a, b, d and/or e), the device or its user may 
         have confidence that over the air eavesdropping does not present a threat. In that case, usage 
         of a fixed MAC address per SSID is a possibility.</t>
 
@@ -525,8 +529,8 @@
 
         <t>In networks implementing 802.1X/EAP, a AAA server may be informed that a device presenting a 
         new MAC address expresses the same device identity as the same device with a previous MAC address. 
-        That AAA server may then inform the access network, for example with a RADIUS  <xref target="RFC5176"/> CoA message, 
-        of the unique identity of the device across RCMs.</t>
+        That AAA server may then inform the access network, for example with a RADIUS  
+        <xref target="RFC5176"/> CoA message, of the unique identity of the device across RCMs.</t>
 
         <t>In the cases where the unicity of the station identity is expressed through a protected mean 
         to the trusted access infrastructure, the infrastructure could also express a single MAC 
@@ -604,18 +608,17 @@
     filing system or remote ones accessed by http (http://domain/dir/... ).-->
 
     <references title="Normative References">
-      <?rfc include="reference.RFC.2119.xml" ?>
-      <?rfc include="reference.RFC.3552.xml" ?>
-	    <?rfc include="reference.RFC.5226.xml" ?>
-	    <?rfc include="reference.RFC.4941.xml" ?>
-	    <?rfc include="reference.RFC.7217.xml" ?>
-	     <?rfc include="reference.RFC.5176.xml" ?>
+    <?rfc include="reference.RFC.2119.xml" ?>
+    <?rfc include="reference.RFC.3552.xml" ?>
    </references>
 
    <references title="Informative References">
-     <?rfc include="reference.RFC.7217.xml" ?>
-      <?rfc include="reference.IEEE.802-1D.1993.xml" ?>
-      <?rfc include="reference.IEEE.802.15.4P_2014.xml" ?>
+   	<?rfc include="reference.RFC.5226.xml" ?>
+	  <?rfc include="reference.RFC.4941.xml" ?>
+   	<?rfc include="reference.RFC.5176.xml" ?>
+    <?rfc include="reference.RFC.7217.xml" ?>
+    <?rfc include="reference.IEEE.802-1D.1993.xml" ?>
+    <?rfc include="reference.IEEE.802.15.4P_2014.xml" ?>
    </references>
 
     <section anchor="app-additional" numbered="true" toc="default">

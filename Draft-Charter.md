@@ -1,11 +1,7 @@
 #### Charter of Working Group
 ##### MAC address is the Link Layer address used in IEEE 802 technologies. It is usually assigned statically for each network card by the Network Interface Card manufacturer and is used for forwarding and receiving frames.  The default static assignment of the MAC address raises privacy concerns and MAC address randomization is being implemented by end-device vendors. 
 
-<<<<<<< HEAD
-##### Currently, many use cases and applications make implicit assumption between device identity and the MAC address. This assumption is being used in both control plane and data plane. Device identity is important in scenarios where the network needs to know it before offering services. Randomized and Changing MAC address (RCM) will break this assumption. This requires update of the current applications to continuously function.  
-=======
 ##### Currently, many use cases and applications make an implicit assumption of unique association between the device identity and its MAC address. This assumption is being used in both control plane and data plane. Device identity is important in scenarios where the network needs to know the device before offering services. Randomized and Changing MAC address (RCM) will break this assumption. This requires update of the current applications to function accross MAC address changes.  
->>>>>>> 1121aaba0426ebdd805315520ed89e780ef714f3
 
 ##### The MADINAS working group will examine the effect of RCM schemes on network services. The group will examine which services continuity gets broken when the client MAC address changes. The group will also examine which identifiers (beyond the MAC address) are expected by network services.
 
